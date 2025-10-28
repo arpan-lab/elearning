@@ -1,4 +1,4 @@
-roject Overview
+Project Overview
 
 This is a fully functional front-end prototype of an E-Learning Platform built using HTML, CSS, and JavaScript.
 It simulates navigation between different sections (Home, Courses, Dashboard, Profile, Login) without reloading the page — just like a Single Page Application (SPA).
@@ -84,3 +84,4 @@ The “Enroll Now” button calls enrollNow(courseName) and stores the enrollmen
 
 👉 Shows a dynamic list of courses the user has enrolled in.
 Courses are fetched from localStorage.
+
