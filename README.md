@@ -1,3 +1,5 @@
+Navigate All Options for getting Courses
+
 Project Overview
 
 This is a fully functional front-end prototype of an E-Learning Platform built using HTML, CSS, and JavaScript.
@@ -84,4 +86,5 @@ The “Enroll Now” button calls enrollNow(courseName) and stores the enrollmen
 
 👉 Shows a dynamic list of courses the user has enrolled in.
 Courses are fetched from localStorage.
+
 
