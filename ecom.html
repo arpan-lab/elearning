@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learning Platform</title>
+    <link rel="stylesheet" href="ecom.css">
+</head>
+<body>
+
+<!-- Header with navigation -->
+<header>
+    <nav>
+        <ul>
+            <li><a href="#" id="home" onclick="setActivePage('home')">Home</a></li>
+            <li><a href="#" id="courses" onclick="setActivePage('courses')">Courses</a></li>
+            <li><a href="#" id="dashboard" onclick="setActivePage('dashboard')">Dashboard</a></li>
+            <li><a href="#" id="profile" onclick="setActivePage('profile')">Profile</a></li>
+            <li><a href="#" id="login" onclick="setActivePage('login')">Login</a></li>
+        </ul>
+    </nav>
+</header> 
+
+<!-- ================================
+     PAGE SECTIONS
+================================ -->
+
+<!-- HOME PAGE -->
+<section id="page-home" class="page-section active">
+    <div class="hero-banner">
+        <h1>Learn New Skills with Top Courses</h1>
+        <input type="text" id="courseSearch" placeholder="Search for courses...">
+    </div>
+</section>
+
+
+<!-- COURSES PAGE -->
+<section id="page-courses" class="page-section">
+    <h2>Featured Courses</h2>
+    <div class="course-list">
+        <div class="course-card">
+            <img src="webdev.jpeg" alt="Course">
+            <h3>Web Development</h3>
+            <p>Learn HTML, CSS, and JavaScript to build websites.</p>
+            <button onclick="enrollNow('Web Development')">Enroll Now</button>
+        </div>
+
+        <div class="course-card">
+            <img src="data_sc.jpeg" alt="Course">
+            <h3>Data Science</h3>
+            <p>Learn Python, Machine Learning, and Data Analysis.</p>
+            <button onclick="enrollNow('Data Science')">Enroll Now</button>
+        </div>
+
+        <div class="course-card">
+            <img src="uiux.jpeg" alt="Course">
+            <h3>UI/UX Design</h3>
+            <p>Learn the principles of user interface and user experience design.</p>
+            <button onclick="enrollNow('UI/UX Design')">Enroll Now</button>
+        </div>
+
+        <div class="course-card">
+            <img src="digital_marketing.jpeg" alt="Course">
+            <h3>Digital Marketing</h3>
+            <p>Learn strategies for successful online marketing.</p>
+            <button onclick="enrollNow('Digital Marketing')">Enroll Now</button>
+        </div>
+
+        <div class="course-card">
+            <img src="graphic.jpeg" alt="Course">
+            <h3>Graphic Design</h3>
+            <p>Master Adobe Photoshop and Illustrator.</p>
+            <button onclick="enrollNow('Graphic Design')">Enroll Now</button>
+        </div>
+
+        <div class="course-card">
+            <img src="photography.jpeg" alt="Course">
+            <h3>Photography</h3>
+            <p>Capture stunning photos with this beginner-friendly course.</p>
+            <button onclick="enrollNow('Photography')">Enroll Now</button>
+        </div>
+    </div>
+</section>
+
+<!-- DASHBOARD PAGE -->
+<section id="page-dashboard" class="page-section">
+    <h2>My Enrolled Courses</h2>
+    <div id="enrolledCoursesList" class="course-list"></div>
+</section>
+
+<!-- PROFILE PAGE -->
+<section id="page-profile" class="page-section">
+    <h2>My Profile</h2>
+    <div class="profile-card">
+        <img src="user.png" alt="User" class="profile-pic">
+        <h3 id="profileName">Guest User</h3>
+        <p>Email: <span id="profileEmail">guest@example.com</span></p>
+        <button onclick="editProfile()">Edit Profile</button>
+        <button class="logout-btn" onclick="logoutUser()">Logout</button>
+    </div>
+</section>
+
+<!-- LOGIN PAGE -->
+<section id="page-login" class="page-section">
+    <h2>Login to Your Account</h2>
+    <form id="loginForm" onsubmit="return loginUser()">
+        <input type="text" id="loginName" placeholder="Username" required>
+        <input type="email" id="loginEmail" placeholder="Email" required>
+        <button type="submit">Login</button>
+    </form>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2025 Arpan E-Learning Platform | All rights reserved</p>
+</footer>
+
+<script src="ecom.js"></script>
+</body>
+</html>

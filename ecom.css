@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: #fdfdfd;
+    color: #333;
+  }
+  
+  header {
+    background: #003366;
+    padding: 10px 0;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin: 0 20px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  
+  nav ul li a.active-link {
+    color: #FFD700;
+    text-decoration: underline;
+  }
+  
+  /* Page sections */
+  .page-section {
+    display: none;
+    opacity: 0;
+    padding: 40px 20px;
+    transition: opacity 0.4s ease-in-out;
+  }
+  
+  .page-section.active {
+    display: block;
+    opacity: 1;
+  }
+  
+  /* Hero banner */
+  .hero-banner {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(to right, #003366, #005599);
+    color: white;
+  }
+  
+  .hero-banner input {
+    margin-top: 20px;
+    padding: 10px;
+    width: 60%;
+    max-width: 400px;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  /* Course section */
+  .course-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .course-card {
+    background: #fff;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.2s ease;
+  }
+  
+  .course-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .course-card img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #003366;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #005599;
+  }
+  
+  /* Profile */
+  .profile-card {
+    text-align: center;
+    background: #f5f5f5;
+    border-radius: 10px;
+    padding: 30px;
+    width: 300px;
+    margin: auto;
+  }
+  
+  .profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  
+  .logout-btn {
+    background: #b00020;
+    margin-top: 15px;
+  }
+  
+  .logout-btn:hover {
+    background: #e00030;
+  }
+  
+  /* Footer */
+  footer {
+    background: #003366;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+  }
+  
